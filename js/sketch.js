@@ -12,6 +12,7 @@ function getCode(left_gesture, right_gesture) {
     "ij":10,
     "mnuvw":11,
     "rt":12,
+    
   }
   let left_code = code_array[left_gesture];
   let right_code = code_array[right_gesture];
