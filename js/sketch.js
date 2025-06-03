@@ -1,7 +1,3 @@
-// ジェスチャーの種類
-// 👍(Thumb_Up), 👎(Thumb_Down), ✌️(Victory), 
-// ☝️(Pointng_Up), ✊(Closed_Fist), 👋(Open_Palm), 
-// 🤟(ILoveYou)
 function getCode(left_gesture, right_gesture) {
   let code_array = {
     "1": 1,
@@ -26,11 +22,13 @@ function getCode(left_gesture, right_gesture) {
 
 function getCharacter(code) {
   const codeToChar = {
-    "16": "a", "26":"g","36":"o","b":"17","d": "27","p": "37","q":"47",
-    "c":"18","e":"28","s":"38","f":"19","h":"29","k":"39","l":"49",
-    "i":"110","j":"210","m":"111","n":"211","u":"311","v":"411","w":"511",
-    "r":"112","t":"212","x":"12","y":"22","z":"32",
-    
+    "16": "a", "26":"g","36":"o","17":"b","27": "d","37": "p","47":"q",
+    "18":"c","28":"e","38":"s","19":"f","29":"h","39":"k","49":"l",
+    "110":"i","210":"j","111":"m","211":"n","311":"u","411":"v","511":"w",
+    "112":"r","212":"t","12":"x","22":"y","32":"z",
+    "1010":"backspace",
+
+
   };
   return codeToChar[code] || "";
 }
